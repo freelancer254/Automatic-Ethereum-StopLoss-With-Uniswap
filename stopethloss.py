@@ -42,7 +42,7 @@ while True:
 	currentPrice = res['ethereum']['usd']
 	
 	#compare with my target price
-	if float(currentPrice) >= TARGET_PRICE:
+	if float(currentPrice) <= TARGET_PRICE:
 
 		#alert with beeps 
 		winsound.Beep(FREQUENCY, DURATION)
